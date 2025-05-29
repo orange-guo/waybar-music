@@ -1,6 +1,7 @@
 # Waybar Music Modules: Player Info & Lyrics
 
-[Waybar](https://github.com/Alexays/Waybar) custom modules to display MPRIS media player information (`player.py`) and synchronized lyrics (`lyrics.py`).
+[Waybar](https://github.com/Alexays/Waybar) custom modules to display MPRIS media player information (`player.py`) and
+synchronized lyrics (`lyrics.py`).
 
 **(It's highly recommended to add a screenshot of your Waybar with these modules active here)**
 
@@ -8,31 +9,30 @@
 
 ### Player Info (`player.py`)
 
-* Shows: Status Icon, Song Title - Artist.
-* Tooltip (on hover): Player name, song, artist, album, progress, volume, cover art status.
-* Album Art: Fetches and caches locally, with a `current_song_art` symlink.
-* Controls: Click for play/pause, right-click for next, scroll for volume, middle-click to view art.
+- Shows: Status Icon, Song Title - Artist.
+- Tooltip (on hover): Player name, song, artist, album, progress, volume, cover art status.
+- Album Art: Fetches and caches locally, with a `current_song_art` symlink.
+- Controls: Click for play/pause, right-click for next, scroll for volume, middle-click to view art.
 
 ### Lyrics Display (`lyrics.py`)
 
-* Shows synchronized lyrics.
-* Source: Local LRC files first, then QQMusic API (via `qqmusic-api`).
-* Tooltip (on hover): Song, artist, status, current/next lyric line.
+- Shows synchronized lyrics.
+- Source: Local LRC files first, then QQMusic API (via `qqmusic-api`).
+- Tooltip (on hover): Song, artist, status, current/next lyric line.
 
 ## Requirements
 
-1. **`playerctl`**: For media player interaction.
-2. **Python 3**:
-    * `requests` (optional for `player.py` album art, falls back to built-in `urllib`).
-    * `qqmusic-api` (for `lyrics.py`): `pip install qqmusic-api requests`
-3. **Fonts**:
-    * Font Awesome (or similar for icons like play/pause).
+- command
+    - `playerctl`: For media player interaction.
+- Python 3 library
+    - `requests`
+    - `qqmusic-api-python`: Fetch lyrics from qq music
+- Nerd Fonts
 
 ## Quick Setup
 
-1. Copy `scripts` to `~/.config/waybar/`
-
-2. Edit `~/.config/waybar/config.jsonc`.
+- Copy `scripts` to `~/.config/waybar/`
+- Edit `~/.config/waybar/config.jsonc`.
 
 ```jsonc
 // In "modules-center" or your preferred spot:
@@ -56,7 +56,7 @@
 }
 ```
 
-3. Edit `~/.config/waybar/style.css`, for example:
+- Edit `~/.config/waybar/style.css`, for example:
 
 ```css
 #custom-lyrics {
@@ -102,7 +102,7 @@
 }
 ```
 
-4. Restart waybar
+- Restart waybar
 
 ## Troubleshooting
 
