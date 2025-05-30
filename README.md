@@ -1,6 +1,7 @@
 # Waybar Music Modules: Player Info & Lyrics
 
-> [Waybar](https://github.com/Alexays/Waybar) custom modules to display MPRIS media player information and display the online lyrics from QQMusic.
+[Waybar](https://github.com/Alexays/Waybar) custom modules to display MPRIS media player information and the online
+lyrics from QQMusic.
 
 ![Screenshot](./screenshot.png)
 
@@ -35,6 +36,7 @@
 ## Installation
 
 - Copy `scripts` to `~/.config/waybar/`
+
 ```bash
 mkdir -p ~/.config/waybar/
 cp scripts ~/.config/waybar/
