@@ -1,9 +1,12 @@
 # Waybar Music Modules: Player Info & Lyrics
 
-[Waybar](https://github.com/Alexays/Waybar) custom modules to display MPRIS media player information (`player.py`) and
-synchronized lyrics (`lyrics.py`).
+> [Waybar](https://github.com/Alexays/Waybar) custom modules to display MPRIS media player information and display the online lyrics from QQMusic.
 
 ![Screenshot](./screenshot.png)
+
+## Supported Media Players
+
+- Spotify ✅
 
 ## Key Features
 
@@ -22,7 +25,7 @@ synchronized lyrics (`lyrics.py`).
 
 ## Requirements
 
-- command
+- Command
     - `playerctl`: For media player interaction.
 - Python 3 library
     - `requests`
