@@ -3,7 +3,7 @@
 [Waybar](https://github.com/Alexays/Waybar) custom modules to display MPRIS media player information (`player.py`) and
 synchronized lyrics (`lyrics.py`).
 
-**(It's highly recommended to add a screenshot of your Waybar with these modules active here)**
+![Screenshot](./screenshot.png)
 
 ## Key Features
 
@@ -29,10 +29,15 @@ synchronized lyrics (`lyrics.py`).
     - `qqmusic-api-python`: Fetch lyrics from qq music
 - Nerd Fonts
 
-## Quick Setup
+## Installation
 
 - Copy `scripts` to `~/.config/waybar/`
-- Edit `~/.config/waybar/config.jsonc`.
+```bash
+mkdir -p ~/.config/waybar/
+cp scripts ~/.config/waybar/
+```
+
+- Edit `~/.config/waybar/config.jsonc`, add the following:
 
 ```jsonc
 // In "modules-center" or your preferred spot:
